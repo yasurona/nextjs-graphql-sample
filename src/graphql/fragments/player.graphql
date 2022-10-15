@@ -1,0 +1,13 @@
+fragment PlayerData on PlayerType {
+  id
+  name
+  nationality {
+    id
+    name
+  }
+  bornOn
+  bloodType {
+    id
+    name
+  }
+}

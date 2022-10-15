@@ -1,0 +1,5 @@
+query PlayerList {
+  players {
+    ...PlayerData
+  }
+}

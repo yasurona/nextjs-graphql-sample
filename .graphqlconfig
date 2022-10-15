@@ -1,0 +1,15 @@
+{
+  "name": "Sampleproject GraphQL Schema",
+  "schemaPath": "src/graphql/schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "${env:API_BASE_URL}/graphql/",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
