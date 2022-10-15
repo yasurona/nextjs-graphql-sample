@@ -1,0 +1,5 @@
+query PlayerDetail($id: ID) {
+  player(id: $id) {
+    ...PlayerDetail
+  }
+}

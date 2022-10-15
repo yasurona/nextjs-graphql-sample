@@ -1,0 +1,4 @@
+fragment PlayerSummary on PlayerType {
+  id
+  name
+}
