@@ -1,7 +1,12 @@
 overwrite: true
-schema: "${API_BASE_URL}/graphql/"
-documents: "src/**/*.graphql"
+schema: ${API_BASE_URL}/graphql/
+documents: src/**/*.graphql
 generates:
   src/graphql/types.ts:
-    preset: "client"
-    plugins: []
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+  src/graphql/schema.graphql:
+    plugins:
+      - schema-ast
