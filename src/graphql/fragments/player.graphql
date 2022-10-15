@@ -1,4 +1,4 @@
-fragment PlayerDetail on PlayerType {
+fragment PlayerData on PlayerType {
   id
   name
   nationality {
