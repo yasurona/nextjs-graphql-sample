@@ -9,12 +9,14 @@ const Home: NextPage = () => {
   if (!data) {
     return <div>no data</div>
   }
+
   return (
     <div>
       <h1>Players list</h1>
       {data.players?.map((player) => (
         <p key={player.id}>
-          id: {player.id} name: {player.name}
+          id: {player.id} 名前: {player.name} 国籍: {player.nationality.name}{' '}
+          生年月日: {player.bornOn} 血液型: {player.bloodType.name}
         </p>
       ))}
     </div>
